@@ -1,0 +1,17 @@
+body{
+  background-color: rgb(108,133,171);
+}
+
+.page-header{
+  font-family:  Calibri;
+  font-size: 25PX;
+  font-weight: bold;
+  color:rgb(49, 42, 48);
+  font-style: italic;
+  text-align: center;
+  padding: 10px 15px;
+}
+.mainMenu{
+  font-family:  Calibri;
+  font-size: 18PX;
+}
