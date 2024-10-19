@@ -1,3 +1,66 @@
+.contactMe{
+  align-items: center;
+}
 .contactHeading{
+  font-size: 3rem;
   color: white;
+  
+}
+.info-text{
+  color: white;
+  font-size: 20px;
+  font-family:  'Arial Narrow Bold';
+  margin-bottom: 20px;
+}
+.contactName{
+  height: 50px;
+  width: 500px;
+    resize: none;
+    border: none;
+    color: white;
+    margin: 10px;
+    background-color:  #282828;;
+    font-size: 1.3rem;
+    font-family: monserrat, sans-serif;
+    color: rgba(241, 233, 233, 0.829);
+    border-left: 2px solid transparent;
+    border-radius: 0;
+}
+.contactEmail{
+  height: 50px;
+  width: 500px;
+  resize: none;
+  border: none;
+  margin: 10px;
+  color: white;
+  background-color:  #282828;;
+  font-size: 1.3rem;
+  font-family: monserrat, sans-serif;
+  color: rgba(241, 233, 233, 0.829);
+  border-left: 2px solid transparent;
+  border-radius: 0;
+}
+.contactMessage{
+  padding: 10px;
+  height: 350px;
+  width: 485px;
+  font-size: 1.3rem;
+  background-color:  #282828;;
+  line-height: 1.5;
+  font-family: monserrat, sans-serif;
+  border: none;
+  margin: 10px;
+  resize: none;
+  color: rgba(241, 233, 233, 0.829);
+}
+.form-Submit{
+border: none;
+font-size: 15px;
+font-family: monserrat, sans-serif;
+height: 20px;
+width: 100px;
+margin: 10px;
+background-color: transparent;
+color: white;
+cursor: pointer;
 }

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Maria Smith - SDET </title>   
+    <title>Maria Smith - SDET </title>  
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
     <link rel="stylesheet" href="styles/homePage.css">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/aboutMe.css">
@@ -15,7 +17,7 @@
    </div>
 
    <!--Homepage intro code with name and button to view remaining information-->
-      <section>
+      <section class="hero" id="hero">
 
        <p class="p-intro1">Hello, I'm <span>Maria</span>.</p>
        <p class="p-intro1">I'm a Software Developer in Test.</p>
@@ -30,25 +32,36 @@
      <!--Menu navigation code-->
     <nav class="navigation-bar js-main-menu">
       <ul class="navigtion"></ul>
-      <li class="navigation-item" id ="navHome">Home</li>
-      <li class="navigation-item" id ="navProjects">Projects</li>
-      <li class="navigation-item" id ="navAbout">About Me</li>
-      <li class="navigation-item" id ="navContact">Contact Me</li>
+      <li class="navigation-item" id ="navHome" >
+        <a href="#hero">Home</a>
+      </li>
+      <li class="navigation-item" id ="navAbout">
+        <a href="#about">About Me</a>
+      </li>
+      <li class="navigation-item" id ="navProjects">
+        <a href="#projects">Projects</a>
+      </li>
+      
+      <li class="navigation-item" id ="navContact">
+        <a href="#contactMe">Contact Me</a>
+      </li>
     </nav>
        <!--About section code-->
 
-      <section>
+      <section class="about" id="about">
         <h2 class="aboutHeading">About</h2>
         <div>
-          <img class="aboutPage image" src="images/Me.jfif" alt="Maria Smith - The Engineer">
+          <img class="aboutPage image" src="images/Me.jpg" alt="Maria Smith - The Engineer">
         </div>
-       
-          <img class="social-icons" src="images/LinkedIn-icon.png">
+       <div class="skill-items">
+        <img class="profile_picture" src="images/javascript.png">
+
+       </div>
         
       </section>
 
     <!--Projects section code-->
-      <section>
+      <section class="projects" id="projects">
         <h2 class="projectsHeading">Projects</h2>
         <div>
 
@@ -58,11 +71,20 @@
       </section>
 
        <!--Contact me section code-->
-       <section>
+       <section class="contactMe" id="contactMe">
         <h2 class="contactHeading">Contact Me</h2>
+        <div class="info-text" id="contactMe-text">
+          Want to get in touch with me regarding new opportunities? Leave your details and 
+          I'll get back to you as soon as possible. 
+        </div>
         <div>
-
-          <img class="social-icons" src="images/LinkedIn-icon.png">
+          <input class="contactName" id="contactName" placeholder="Name">
+          <input class="contactEmail" id="contactEmail" type="email" Email">
+          <textarea class="contactMessage" id="contactMessage" placeholder="Type your message here" maxlength="500" required></textarea>      
+          
+        </div>
+        <div>
+          <button class="form-Submit" id="form-Submit" type="submit">Submit</button>
         </div>
 
       </section>

@@ -2,4 +2,32 @@
   color: white;
   font-family:  Calibri;
   font-size: 18PX;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 6rem;
+  border-bottom: 1px solid #1a1a1a;
+  background-color: rgba(40, 40, 40, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  z-index: 99999999999;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+navigation-item{
+  font-size: 30px;
 }
