@@ -1,24 +1,82 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Maria Smith's Portfolio</title>   
+    <title>Maria Smith - SDET </title>   
     <link rel="stylesheet" href="styles/homePage.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/aboutMe.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contactMe.css">
+    <link rel="stylesheet" href="styles/footer.css">
   </head>
   <body> 
-    <p class="page-header">Maria Smith's Portfolio</p>
     <div>
-      <img class="homePage image" src="images/Me.jfif" alt="Maria Smith - The Engineer">
+      <h1 class="page-header">Maria Smith's Portfolio</h1>       
+   </div>
+
+   <!--Homepage intro code with name and button to view remaining information-->
+      <section>
+
+       <p class="p-intro1">Hello, I'm <span>Maria</span>.</p>
+       <p class="p-intro1">I'm a Software Developer in Test.</p>
+       <p class="p-intro1">I love doing both manual and automated testing.</p> 
+      <div>
+        <button class="viewWorkButton" onclick="">View My Work</button>
+
+      </div>
+        
+      </section>
     </div>
-    
+     <!--Menu navigation code-->
+    <nav class="navigation-bar js-main-menu">
+      <ul class="navigtion"></ul>
+      <li class="navigation-item" id ="navHome">Home</li>
+      <li class="navigation-item" id ="navProjects">Projects</li>
+      <li class="navigation-item" id ="navAbout">About Me</li>
+      <li class="navigation-item" id ="navContact">Contact Me</li>
+    </nav>
+       <!--About section code-->
 
-    <menu class="mainMenu js-main-menu">
-      <li>Resume</li>
-      <li>Projects</li>
-      <li>About Me</li>
-    </menu>
+      <section>
+        <h2 class="aboutHeading">About</h2>
+        <div>
+          <img class="aboutPage image" src="images/Me.jfif" alt="Maria Smith - The Engineer">
+        </div>
+       
+          <img class="social-icons" src="images/LinkedIn-icon.png">
+        
+      </section>
 
+    <!--Projects section code-->
+      <section>
+        <h2 class="projectsHeading">Projects</h2>
+        <div>
 
+          <img class="social-icons" src="images/LinkedIn-icon.png">
+        </div>
 
+      </section>
+
+       <!--Contact me section code-->
+       <section>
+        <h2 class="contactHeading">Contact Me</h2>
+        <div>
+
+          <img class="social-icons" src="images/LinkedIn-icon.png">
+        </div>
+
+      </section>
+       
+    <!--Footer with social icons code-->
+
+      <footer class="footer">
+        <div class="socials">
+          <img class="social-icons" src="images/LinkedIn-icon.png">
+        </div>
+        <p class="copyright">Maria Smith ©2024</p>
+      </footer>
+   
+     
 
     <script src="scripts/main_page.js">
 
