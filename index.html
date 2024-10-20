@@ -31,28 +31,29 @@
     </div>
      <!--Menu navigation code-->
     <nav class="navigation-bar js-main-menu">
-      <ul class="navigtion"></ul>
-      <li class="navigation-item" id ="navHome" >
-        <a href="#hero">Home</a>
-      </li>
-      <li class="navigation-item" id ="navAbout">
-        <a href="#about">About Me</a>
-      </li>
-      <li class="navigation-item" id ="navProjects">
-        <a href="#projects">Projects</a>
-      </li>
-      
-      <li class="navigation-item" id ="navContact">
-        <a href="#contactMe">Contact Me</a>
-      </li>
+      <ul class="navigtion">
+        <li class="navigation-item" id ="navHome" >
+          <a href="#hero">Home</a>
+        </li>
+        <li class="navigation-item" id ="navAbout">
+          <a href="#about">About Me</a>
+        </li>
+        <li class="navigation-item" id ="navProjects">
+          <a href="#projects">Projects</a>
+        </li>
+        
+        <li class="navigation-item" id ="navContact">
+          <a href="#contactMe">Contact Me</a>
+        </li>
+      </ul>
     </nav>
        <!--About section code-->
 
-      <section class="about" id="about">
+      <section class="about-columns" id="about">
         <h2 class="aboutHeading">About</h2>
-        <div>
-          <img class="aboutPage image" src="images/Me.jpg" alt="Maria Smith - The Engineer">
-        </div>
+        <div class="column">
+          <img class="aboutPageImage" src="images/Me.jpg" alt="Maria Smith - The Engineer">
+        </div class="column">
        <div class="skill-items">
         <img class="profile_picture" src="images/javascript.png">
 
@@ -79,7 +80,7 @@
         </div>
         <div>
           <input class="contactName" id="contactName" placeholder="Name">
-          <input class="contactEmail" id="contactEmail" type="email" Email">
+          <input class="contactEmail" id="contactEmail" type="email" Email>
           <textarea class="contactMessage" id="contactMessage" placeholder="Type your message here" maxlength="500" required></textarea>      
           
         </div>
@@ -92,10 +93,30 @@
     <!--Footer with social icons code-->
 
       <footer class="footer">
+        <div class="return-home">
+          <a href="#hero">
+          <img class="arrowTop" src ="images/right.png" alt="TOP">        
+        </a>
+        </div>
+        
         <div class="socials">
-          <img class="social-icons" src="images/LinkedIn-icon.png">
+          <a href="https://www.linkedin.com/in/mariaasmith6" target="_blank">
+            <div class="socialLinked-div">
+              <img class="social-linkedIn" src="images/linkedin-blk-icon.png" alt="LinkedIn">                           
+            </div>      
+            </a>     
+            
+            <!--Footer with social icons code-->
+            <div class="socialGithub-div">
+          <a href="https://github.com/MAS-Engineer" target="_blank">
+            
+              <img class="social-github" src="images/github-logo.png" alt="github">                     
+            </div>           
+            
+          </a>
         </div>
         <p class="copyright">Maria Smith ©2024</p>
+       
       </footer>
    
      

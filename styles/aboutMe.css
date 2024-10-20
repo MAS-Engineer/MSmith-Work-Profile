@@ -1,6 +1,25 @@
 .aboutHeading{
   color: white;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 6rem;
+  font-family: monserrat, sans-serif;
 }
-.aboutPage image{
+.aboutPageImage{
   background-color: none;
+  border-radius: 50px;
+  width: 275px;
+  height: auto;
+  padding: 25px 5px 5px 25px;
+}
+.about-columns{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+.column{
+  padding: 10px;
+  box-sizing: border-box;
 }

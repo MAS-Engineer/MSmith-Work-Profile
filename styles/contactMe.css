@@ -1,9 +1,12 @@
 .contactMe{
   align-items: center;
+  
 }
 .contactHeading{
   font-size: 3rem;
   color: white;
+  text-align: center;
+
   
 }
 .info-text{
