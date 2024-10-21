@@ -3,17 +3,28 @@
   
 }
 .contactHeading{
-  font-size: 3rem;
   color: white;
-  text-align: center;
-
-  
+  font-size: 3rem;
+  font-family: monserrat, sans-serif;
+  border-bottom: 18px solid #a253a5;
+  width: 16rem;
+  display: block;
+  margin: 10rem;
+  position: relative;
+  left: 3.5rem;
+  top: 6.3rem;
+  z-index: -1;
+  padding: 0;
+  box-sizing: inherit;
 }
+
 .info-text{
   color: white;
   font-size: 20px;
   font-family:  'Arial Narrow Bold';
   margin-bottom: 20px;
+  align-items: center;
+  text-wrap:balance;
 }
 .contactName{
   height: 50px;
@@ -55,16 +66,20 @@
   margin: 10px;
   resize: none;
   color: rgba(241, 233, 233, 0.829);
+  border-radius: 5%;
+  
+  
 }
 .form-Submit{
-border: none;
-font-size: 15px;
-font-family: monserrat, sans-serif;
-height: 20px;
-width: 100px;
-margin: 10px;
-background-color: transparent;
-color: white;
-cursor: pointer;
+  padding: 10px; /* Padding inside button */
+  background-color: #a253a5; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-family: monserrat, sans-serif;
 
+}
+.form-Submit:hover{
+  background-color: #46033a; 
 }
