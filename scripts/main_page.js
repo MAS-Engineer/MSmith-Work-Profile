@@ -34,6 +34,30 @@
       });
   });
 
+  /*Code to implement an email service
+    document.getElementById('form-Submit').addEventListener('click', function() {
+        // Get form values
+        const name = document.getElementById('contactName').value;
+        const email = document.getElementById('contactEmail').value;
+        const message = document.getElementById('contactMessage').value;
+
+        // Simple validation
+        if (name && email && message) {
+            // You can implement the actual form submission logic here
+            console.log('Form submitted:', { name, email, message });
+
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+
+            // Clear the form
+            document.getElementById('contactName').value = '';
+            document.getElementById('contactEmail').value = '';
+            document.getElementById('contactMessage').value = '';
+        } else {
+            alert('Please fill in all fields.');
+        }
+    });
+
   //Send email code
     (function() {
         emailjs.init("mpitts.engineer@gmail.com"); // Replace with your EmailJS user ID
@@ -42,10 +66,12 @@
     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault();
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+        emailjs.sendForm('service_dia7s4q', 'template_2foue1e', this)
             .then(function() {
                 alert('Email sent successfully!');
             }, function(error) {
                 alert('Failed to send email: ' + JSON.stringify(error));
             });
     });
+*/
+ 

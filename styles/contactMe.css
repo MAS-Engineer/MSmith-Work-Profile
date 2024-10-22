@@ -1,3 +1,9 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
 .contactMe {
   display: flex;
   flex-direction: column; /* Stack elements vertically */
@@ -25,6 +31,21 @@
   margin-bottom: 20px;
   text-align: center; /* Center the text */
 }
+.emailLink {
+  display: inline-block; /* Allows padding and border */
+  padding: 10px 15px; /* Adds some space inside the link */
+  color: #eef2f7; /* Text color */
+  text-decoration: none; /* Removes the underline */
+  border: 2px solid #38022f; /* Border color and width */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #a253a5;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.emailLink:hover {
+  background-color: #38022f; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
 
 .contactName, .contactEmail, .contactMessage {
   height: 50px; /* Height for name and email */
@@ -43,6 +64,7 @@
 
 .contactMessage {
   height: 200px; /* Adjusted height for message */
+  width:  100%;
   padding: 10px; /* Padding inside the textarea */
   line-height: 1.5; /* Line height */
   border-radius: 2%; /* Rounded corners */
@@ -60,6 +82,11 @@
   max-width: 250px; /* Increased maximum width */
   font-size: 1.5rem; /* Larger font size */
   text-align: center;
+}
+.success-message {
+  color: green;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .form-Submit:hover {

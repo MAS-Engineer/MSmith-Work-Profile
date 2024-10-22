@@ -35,10 +35,17 @@ ul {
   unicode-bidi: isolate;
   color: white;
 }
+
+.navigation-item :hover{
+  margin-right: 2rem;
+  color: rgb(231, 154, 231);
+  
+}
 .navigation-item:not( :last-child){
   margin-right: 2rem;
   
 }
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .navigation-bar {

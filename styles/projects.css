@@ -39,16 +39,19 @@ body {
 .project-list h3 {
   margin: 0; /* Remove default margin */
   color: #0f0913; /* Link color */
+  font-size: 15px;
+  text-decoration: underline;
+  font-family: Arial, sans-serif;
 }
 .project-list p {
   color: #0f0913; /* Link color */
-
+  font-family: Arial, sans-serif;
+  font-size: 14px;
   margin: 10px 0; /* Margin above and below paragraphs */
 }
 .project-list a {
   color: #5b098a; /* Link color */
   text-decoration: none; /* Remove underline */
-   
 }
 .project-list a:hover {
   text-decoration: underline; /* Underline on hover */
