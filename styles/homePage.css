@@ -3,6 +3,8 @@
 body{
   margin: 0;
   background-color: black; /* Background color */ 
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 @media(max-width: 768px){
   body{
