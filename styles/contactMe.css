@@ -7,7 +7,7 @@
   font-size: 3rem;
   font-family: monserrat, sans-serif;
   border-bottom: 18px solid #a253a5;
-  width: 16rem;
+  width: 18rem;
   display: block;
   margin: 10rem;
   position: relative;
@@ -67,7 +67,7 @@
   resize: none;
   color: rgba(241, 233, 233, 0.829);
   border-radius: 5%;
-  
+
   
 }
 .form-Submit{
@@ -83,3 +83,4 @@
 .form-Submit:hover{
   background-color: #46033a; 
 }
+

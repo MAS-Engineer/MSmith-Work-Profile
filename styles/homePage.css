@@ -4,6 +4,40 @@ body{
 
   margin: 0;
   background-color: black; /* Background color */ 
+
+}
+@media(max-width: 768px){
+  .body{
+    font-size: 9vw;
+  }
+}
+@media(max-width: 480px){
+  .body{
+    font-size: 9vw;
+  }
+}
+.marquee {
+  width: 100%; /* Full width */
+  overflow: hidden; /* Hide overflow */
+  background: #6b0585; /* Background color for marquee */
+  color: white; /* Text color */
+  white-space: nowrap; /* Prevent line breaks */
+  font-size: 20px;
+  margin-top: 15px;
+}
+.marquee p {
+  display: inline-block; /* Allow inline block for scrolling */
+  padding: 15px; /* Padding for aesthetics */
+  animation: scroll 10s linear infinite; /* Animation properties */
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(100%); /* Start off-screen right */
+  }
+  100% {
+      transform: translateX(-100%); /* End off-screen left */
+  }
 }
 .star {
   position: absolute;
