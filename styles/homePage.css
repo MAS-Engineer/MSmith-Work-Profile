@@ -6,7 +6,7 @@ body{
   background-color: black; /* Background color */ 
 
 }
-@media(max-width: 768px){
+/*@media(max-width: 768px){
   .body{
     font-size: 9vw;
   }
@@ -15,7 +15,7 @@ body{
   .body{
     font-size: 9vw;
   }
-}
+}*/
 .marquee {
   width: 100%; /* Full width */
   overflow: hidden; /* Hide overflow */
