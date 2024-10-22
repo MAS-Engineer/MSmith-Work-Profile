@@ -18,11 +18,13 @@
 
 .projects {
   padding: 0px;
-  background-color: #5a0753; /* Light background */
+  background-color: #5a0753; /* background */
+  box-sizing: border-box;
 }
 .project-list {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
+
 }
 .project-list li {
   margin-bottom: 50px; /* Space between projects */
