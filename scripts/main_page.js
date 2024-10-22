@@ -42,7 +42,7 @@
     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault();
 
-        emailjs.sendForm('service_dia7s4q', 'template_2foue1e', this)
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
             .then(function() {
                 alert('Email sent successfully!');
             }, function(error) {

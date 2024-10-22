@@ -27,12 +27,14 @@
 }
 ul {
   display: flex;
-   list-style-type: none;
+  list-style-type: none;
   text-decoration: none;
   margin-inline-start: 0px;
   margin-inline-end: 20px;
   padding-inline-start: 40px;
   unicode-bidi: isolate;
+  color: white;
+
   
 }
 .navigation-item:not( :last-child){

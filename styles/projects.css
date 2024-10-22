@@ -33,8 +33,12 @@
 }
 .project-list h3 {
   margin: 0; /* Remove default margin */
+  color: #0f0913; /* Link color */
+
 }
 .project-list p {
+  color: #0f0913; /* Link color */
+
   margin: 10px 0; /* Margin above and below paragraphs */
 }
 .project-list a {
