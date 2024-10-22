@@ -1,86 +1,103 @@
-.contactMe{
-  align-items: center;
-  
+.contactMe {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content */
+  padding: 2rem; /* Add some padding */
 }
-.contactHeading{
+
+.contactHeading {
   color: white;
-  font-size: 3rem;
-  font-family: monserrat, sans-serif;
+  font-size: 3vw; /* Responsive font size */
+  font-family: 'Montserrat', sans-serif;
   border-bottom: 18px solid #a253a5;
-  width: 18rem;
-  display: block;
-  margin: 10rem;
-  position: relative;
-  left: 3.5rem;
-  top: 6.3rem;
-  z-index: -1;
+  width: 80%; /* Use percentage for responsiveness */
+  max-width: 18rem; /* Set a maximum width */
+  margin: 5rem 0; /* Adjust margins */
+  text-align: center; /* Center the heading */
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box; /* Use border-box for padding/margins */
 }
 
-.info-text{
+.info-text {
   color: white;
-  font-size: 20px;
-  font-family:  'Arial Narrow Bold';
+  font-size: 1.2rem; /* Responsive font size */
+  font-family: 'Arial Narrow Bold';
   margin-bottom: 20px;
-  align-items: center;
-  text-wrap:balance;
+  text-align: center; /* Center the text */
 }
-.contactName{
-  height: 50px;
-  width: 500px;
-    resize: none;
-    border: none;
-    color: white;
-    margin: 10px;
-    background-color:  #282828;;
-    font-size: 1.3rem;
-    font-family: monserrat, sans-serif;
-    color: rgba(241, 233, 233, 0.829);
-    border-left: 2px solid transparent;
-    border-radius: 0;
-}
-.contactEmail{
-  height: 50px;
-  width: 500px;
-  resize: none;
-  border: none;
-  margin: 10px;
-  color: white;
-  background-color:  #282828;;
-  font-size: 1.3rem;
-  font-family: monserrat, sans-serif;
-  color: rgba(241, 233, 233, 0.829);
-  border-left: 2px solid transparent;
-  border-radius: 0;
-}
-.contactMessage{
-  padding: 10px;
-  height: 350px;
-  width: 485px;
-  font-size: 1.3rem;
-  background-color:  #282828;;
-  line-height: 1.5;
-  font-family: monserrat, sans-serif;
-  border: none;
-  margin: 10px;
-  resize: none;
-  color: rgba(241, 233, 233, 0.829);
-  border-radius: 5%;
 
-  
+.contactName, .contactEmail, .contactMessage {
+  height: 50px; /* Height for name and email */
+  width: 90%; /* Use percentage for responsiveness */
+  max-width: 500px; /* Set a maximum width */
+  resize: none; /* Disable resizing */
+  border: white; /* Remove border */
+  color: rgba(241, 233, 233, 0.829);
+  background-color: #282828; /* Background color */
+  font-size: 1.3rem; /* Font size */
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 0; /* Margin above and below */
+  border-left: 2px solid transparent; /* Left border */
 }
-.form-Submit{
-  padding: 10px; /* Padding inside button */
+
+.contactMessage {
+  height: 200px; /* Adjusted height for message */
+  padding: 10px; /* Padding inside the textarea */
+  line-height: 1.5; /* Line height */
+  border-radius: 2%; /* Rounded corners */
+}
+
+.form-Submit {
+  padding: 10px 40px 10px 40px; /* Increased padding for a larger button */
   background-color: #a253a5; /* Button color */
   color: white; /* Text color */
   border: none; /* Remove border */
   border-radius: 4px; /* Rounded corners */
   cursor: pointer; /* Pointer on hover */
-  font-family: monserrat, sans-serif;
-
+  font-family: 'Montserrat', sans-serif;
+  width: 90%; /* Responsive width */
+  max-width: 250px; /* Increased maximum width */
+  font-size: 1.5rem; /* Larger font size */
+  text-align: center;
 }
-.form-Submit:hover{
-  background-color: #46033a; 
+
+.form-Submit:hover {
+  background-color: #46033a; /* Button hover color */
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .contactHeading {
+      font-size: 4vw; /* Increase font size for tablets */
+  }
+
+  .info-text {
+      font-size: 1rem; /* Adjust info text size */
+  }
+
+  .contactName, .contactEmail {
+      height: 40px; /* Adjust height for smaller screens */
+  }
+
+  .contactMessage {
+      height: 150px; /* Adjust height for smaller screens */
+  }
+
+  .form-Submit {
+      font-size: 1rem; /* Adjust button text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .contactHeading {
+      font-size: 5vw; /* Increase font size for mobile */
+  }
+
+  .info-text {
+      font-size: 0.9rem; /* Further adjust info text size */
+  }
+
+  .contactMessage {
+      height: 100px; /* Adjust height for smaller screens */
+  }
+}

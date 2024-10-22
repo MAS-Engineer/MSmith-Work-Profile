@@ -33,3 +33,19 @@
           }
       });
   });
+
+  //Send email code
+    (function() {
+        emailjs.init("mpitts.engineer@gmail.com"); // Replace with your EmailJS user ID
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm('service_dia7s4q', 'template_2foue1e', this)
+            .then(function() {
+                alert('Email sent successfully!');
+            }, function(error) {
+                alert('Failed to send email: ' + JSON.stringify(error));
+            });
+    });

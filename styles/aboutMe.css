@@ -44,11 +44,23 @@
 .profile_description{
   color:rgb(196, 190, 195);
   font-family: monserrat, sans-serif;
-  width: 700px;
-  font-size: 1.6rem;
-  line-height: 1.8rem;
+  max-width: 700px;
+  font-size: 2vw;
+  line-height: 1.8;
   margin-top: 2px;
   align-items: left;
+}
+/* Media queries for finer control */
+@media (max-width: 768px) {
+  .profile_description {
+      font-size: 5vw; /* Increase font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .profile_description {
+      font-size: 6vw; /* Increase font size for mobile */
+  }
 }
 .image-gallery {
   display: grid; /* Use CSS Grid for layout */

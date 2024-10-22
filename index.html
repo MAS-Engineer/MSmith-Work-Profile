@@ -27,24 +27,22 @@
 
       <section class="hero" id="hero">
         <div class="canvas">
-          <canvas class="connecting-dots" width="1400" height="275" style="display: block;"></canvas>
+            <canvas class="connecting-dots" width="1400" height="275" style="display: block;"></canvas>
         </div>
         <div class="heading">
-          <div class="p-intro1">Hello, I'm <span>Maria</span>.</div>
-          <div class="p-intro1">I'm a Software Developer in Test.</div>
-          <div class="p-intro1">Manual and Automated Tester</div> 
-       
-        <a href="#about" class="heading_link">
-          <div class="viewWorkButton">
-            <div class="viewWorkText"> View my Work</div>           
-          </div>
-          </div>
-          </a>
-
-      </div>
-        
-      </section>
-    </div>
+            <div class="p-intro1">Hello, I'm <span>Maria</span>.</div>
+            <div >I'm a Software Developer in Test.</div>
+            <div >Manual and Automated Tester</div> 
+            
+            <div class="viewWorkContainer"> <!-- Container for centering -->
+                <a href="#about" class="heading_link">
+                    <div class="viewWorkButton">
+                        <div class="viewWorkText">View my Work</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
      <!--Menu navigation code-->
     <nav class="navigation-bar js-main-menu">
       <ul class="navigtion">
@@ -179,12 +177,12 @@
         </div>
         <div>
           <input class="contactName" id="contactName" placeholder="Name">
-          <input class="contactEmail" id="contactEmail" type="email" Email>
+          <input class="contactEmail" id="contactEmail" placeholder="Email" Email>
           <textarea class="contactMessage" id="contactMessage" placeholder="Type your message here" maxlength="500" required></textarea>      
           
         </div>
         <div>
-          <button class="form-Submit" id="form-Submit" type="submit">Submit</button>
+          <button class="form-Submit" id="form-Submit" type="submit">Send</button>
         </div>
 
       </section>
@@ -220,9 +218,11 @@
    
      
 
-    <script src="scripts/main_page.js">
+    <script src="scripts/main_page.js"></script>
+    <!--<script src="https://cdn.emailjs.com/dist/email.min.js"></script>-->
 
-    </script>
+
+   
   </body>
 </html>
 

@@ -1,16 +1,17 @@
 .projectsHeading{
   color: white;
-  font-size: 3rem;
+  font-size: 3vw;
   font-family: monserrat, sans-serif;
   border-bottom: 18px solid #a253a5;
-  width: 18rem;
+  max-width: 18rem;
+  width: 80%;
   display: flex;
   margin: 8rem;
   position: relative;
   left: 10rem;
   top: 2.3rem;
   padding: 0;
-  box-sizing: inherit;
+  
   align-items: center;
   margin-bottom: 80px; /* Space below heading */
 }
@@ -42,4 +43,27 @@
 }
 .project-list a:hover {
   text-decoration: underline; /* Underline on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .projectsHeading {
+      font-size: 4vw; /* Increase font size for tablets */
+      margin: 5rem auto; /* Adjust margins for smaller screens */
+  }
+
+  .project-list li {
+      margin-bottom: 15px; /* Adjust spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .projectsHeading {
+      font-size: 5vw; /* Increase font size for mobile */
+      margin: 3rem auto; /* Adjust margins for smaller screens */
+  }
+
+  .project-list li {
+      margin-bottom: 10px; /* Adjust spacing */
+  }
 }
