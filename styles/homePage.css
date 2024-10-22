@@ -76,18 +76,21 @@ body{
   font-family: monserrat, sans-serif;
   padding: 20px; /* Add some padding for spacing */
   word-spacing: .5em;
+  
 }
 .p-intro1 span {
   color: #d8ff4d;
   font-weight: 400px;
   align-items: center;
-  word-spacing: .5em;
+  word-spacing: .2em;
+  
 }
 
 .viewWorkContainer {
   display: flex; /* Use flexbox */
   justify-content: center; /* Center the button */
   margin-top: 2.4rem; /* Space above the button */
+  
 }
 .viewWorkButton{
   
@@ -106,6 +109,7 @@ body{
   font-size: 1.8rem; /* Responsive font size */
   font-weight: 500;
   cursor: pointer;
+  text-align: none;
   transition: background-color 0.3s; /* Add transition */
 
 }

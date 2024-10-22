@@ -16,7 +16,6 @@
   z-index: 99999999999;  
   cursor: pointer;
   
-  
 }
 .navigation {
   display: flex;
@@ -35,10 +34,30 @@ ul {
   padding-inline-start: 40px;
   unicode-bidi: isolate;
   color: white;
-
-  
 }
 .navigation-item:not( :last-child){
   margin-right: 2rem;
   
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navigation-bar {
+      font-size: 4vw; /* Increase font size for tablets */
+      margin: 5rem auto; /* Adjust margins for smaller screens */
+  }
+
+  .ul {
+      margin-bottom: 15px; /* Adjust spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation-bar {
+      font-size: 5vw; /* Increase font size for mobile */
+      margin: 3rem auto; /* Adjust margins for smaller screens */
+  }
+
+  .ul {
+      margin-bottom: 10px; /* Adjust spacing */
+  }
 }
