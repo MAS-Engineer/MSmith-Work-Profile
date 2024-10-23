@@ -45,7 +45,7 @@
   color:rgb(196, 190, 195);
   font-family: monserrat, sans-serif;
   max-width: 700px;
-  font-size: 2vw;
+  font-size: 1vw;
   line-height: 1.8;
   margin-top: 2px;
   align-items: left;
@@ -53,7 +53,7 @@
 /* Media queries for finer control */
 @media (max-width: 768px) {
   .profile_description {
-      font-size: 5vw; /* Increase font size for tablets */
+      font-size: 6vw; /* Increase font size for tablets */
   }
 }
 

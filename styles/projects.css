@@ -28,6 +28,7 @@ body {
   padding: 0; /* Remove padding */
   justify-content: center;
   gap: .5rem;
+  grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
 }
 .project-list li {
   margin-bottom: 50px; /* Space between projects */
@@ -96,6 +97,7 @@ body {
 
   .project-list li {
       margin-bottom: 15px; /* Adjust spacing */
+      grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
   }
 }
 
@@ -108,6 +110,11 @@ body {
   .project-list li {
       margin-bottom: 10px; /* Adjust spacing */
       font-size: .6rem;
+      
+  }
+  .project-list{
+    grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+
   }
  
 }

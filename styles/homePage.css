@@ -79,10 +79,11 @@ body{
   
 }
 .p-intro1 span {
-  color: #d8ff4d;
-  font-weight: 400px;
+  color: #eb1717;
+  font-weight: bold;
   align-items: center;
   word-spacing: .2em;
+  
   
 }
 
@@ -102,20 +103,21 @@ body{
   width: 10em; /* Allow button to resize */
   height: 2.8rem;
   background-color: rgb(25, 6, 26);
-  border: 2px solid #cada3e;
+  border: 2px solid #4b023b;
   border-radius: 2rem;
   color: #e9eff0;
   font-family: monserrat, sans-serif;
   font-size: 1.8rem; /* Responsive font size */
   font-weight: 500;
   cursor: pointer;
-  text-align: none;
+
   transition: background-color 0.3s; /* Add transition */
 
 }
 .viewWorkButton:hover {
-  background-color: #cada3e; /* Change on hover */
-  color: rgb(25, 6, 26); /* Change text color on hover */
+  background-color: #4b023b; /* Change on hover */
+  color: rgb(245, 222, 247); /* Change text color on hover */
+ 
 }
 
 
