@@ -38,13 +38,23 @@ body {
   text-decoration: none; /* Removes the underline */
   border: 2px solid #38022f; /* Border color and width */
   border-radius: 4px; /* Rounded corners */
-  background-color: #a253a5;
+  background-color: #a253a5 ;
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  animation: flash 3s infinite; /* Apply the flash animation */
 }
 
 .emailLink:hover {
-  background-color: #38022f; /* Background color on hover */
-  color: white; /* Text color on hover */
+  background-color:#38022f  ; /* Background color on hover */
+  color: 
+  white; /* Text color on hover */
+}
+@keyframes flash {
+  0%, 100% {
+      opacity: 1; /* Fully visible */
+  }
+  50% {
+      opacity: 0; /* Invisible */
+  }
 }
 
 .contactName, .contactEmail, .contactMessage {
