@@ -33,6 +33,16 @@
           }
       });
   });
+  function openModal() {
+    document.getElementById('imageModal').style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Disable background scrolling
+}
+
+function closeModal() {
+    document.getElementById('imageModal').style.display = 'none';
+    document.body.style.overflow = 'auto'; // Enable background scrolling
+}
+
 
   /*Code to implement an email service
     document.getElementById('form-Submit').addEventListener('click', function() {
