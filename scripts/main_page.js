@@ -14,6 +14,14 @@
       stars.push(star);
   }
 
+  //Last updated date insert without time
+  //document.getElementById("lastUpdated").textContent = document.lastModified; includes time
+
+  const lastModified = new Date(document.lastModified);
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  document.getElementById("lastUpdated").textContent = lastModified.toLocaleDateString(undefined, options);
+
+
   // Mouse move effect
   document.addEventListener('mousemove', (e) => {
       stars.forEach((star) => {

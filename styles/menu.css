@@ -12,7 +12,7 @@
   background-color: rgba(40, 40, 40, 0.95);
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-  margin-top: 4rem;
+  margin-top: 2rem;
   z-index: 99999999999;  
   cursor: pointer;
   
@@ -44,6 +44,10 @@ ul {
 .navigation-item:not( :last-child){
   margin-right: 2rem;
   
+}
+.updatedText{
+  font-size: 2vh;
+  align-items: left;
 }
 
 /* Media Queries for Responsiveness */
