@@ -1,11 +1,7 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+
 .projectsHeading{
   color: white;
   font-size: 3vw;
-  font-family: monserrat, sans-serif;
   border-bottom: 18px solid #a253a5;
   max-width: 18rem;
   width: 80%;
@@ -31,24 +27,22 @@ body {
   grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
 }
 .project-list li {
-  margin-bottom: 50px; /* Space between projects */
-  border: 5px solid #ddd; /* Border around project items */
-  padding: 15px; /* Padding inside project items */
-  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 8vw; /* Space between projects */
+  border: 1vw solid #ddd; /* Border around project items */
+  padding: 3vw; /* Padding inside project items */
+  border-radius: 2vw; /* Rounded corners */
   background-color: #fff; /* White background */
 }
 .project-list h3 {
   margin: 0; /* Remove default margin */
   color: #0f0913; /* Link color */
   font-size: 15px;
-  text-decoration: underline;
-  font-family: Arial, sans-serif;
+  text-decoration: underline;  
 }
 .project-list p {
   color: #0f0913; /* Link color */
-  font-family: Arial, sans-serif;
   font-size: 14px;
-  margin: 10px 0; /* Margin above and below paragraphs */
+  margin: 2vw 0; /* Margin above and below paragraphs */
 }
 .project-list a {
   color: #5b098a; /* Link color */
@@ -96,7 +90,6 @@ body {
 .gameHeading{
   color: white;
   font-size: vw;
-  font-family: monserrat, sans-serif;
   border-bottom: 18px solid #a253a5;
   max-width: 18rem;
   width: 80%;
@@ -111,7 +104,6 @@ body {
 }
 .game{
  
-  font-family: Arial, sans-serif;
   align-items: center;
   margin: 0;
   margin-left: 10%;
@@ -133,6 +125,8 @@ body {
   .project-list li {
       margin-bottom: 15px; /* Adjust spacing */
       grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+      max-height: 300px;
+
   }
 }
 
@@ -145,10 +139,13 @@ body {
   .project-list li {
       margin-bottom: 10px; /* Adjust spacing */
       font-size: .6rem;
+      max-height: 600px;
+
       
   }
   .project-list{
-    grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+    grid-template-columns: repeat(1, 1fr); /* Switch to 2 columns */
+    max-height: 300px;
 
   }
  
