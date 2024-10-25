@@ -145,6 +145,7 @@
   .projectsHeading {
       font-size: 5vw; /* Increase font size for mobile */
       margin: 2rem auto; /* Adjust margins for smaller screens */
+      
   }
 
   .project-list {
