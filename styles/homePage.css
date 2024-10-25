@@ -11,12 +11,20 @@ body{
   body{
     font-size: 4vw;
     width: 100%;
-    margin: auto;
+    margin: auto;    
+  }
+  .heading_link {
+    text-decoration: none; /* Remove underline from link */
+    color: white; /* Set link color to white */
   }
 }
 @media(max-width: 480px){
   body{
     font-size: 6vw;
+  }
+  .heading_link {
+    text-decoration: none; /* Remove underline from link */
+    color: white; /* Set link color to white */
   }
 }
 .marquee {
@@ -78,7 +86,7 @@ body{
   font-size: 35px;
   
   padding: 20px; /* Add some padding for spacing */
-  word-spacing: .3em;
+  
   
 }
 .heading_link {
