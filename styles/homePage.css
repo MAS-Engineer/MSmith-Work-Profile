@@ -5,10 +5,13 @@ body{
   background-color: black; /* Background color */ 
   overflow-x: hidden;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 @media(max-width: 768px){
   body{
     font-size: 4vw;
+    width: 100%;
+    margin: auto;
   }
 }
 @media(max-width: 480px){
@@ -51,7 +54,7 @@ body{
   color: white;
   text-align: center;
   padding: 50em;
-  font-family: Arial, sans-serif;
+  
 }
 
 .resumeLink{
@@ -59,7 +62,7 @@ body{
   color: yellow;
   margin-top: 20%;
   margin-left: 5%;
-  font-family: monserrat, sans-serif;
+
 }
 .viewWorkText{
   align-items: center;
@@ -73,7 +76,7 @@ body{
   text-align: center; /* Center text */
   color: white;
   font-size: 35px;
-  font-family: monserrat, sans-serif;
+  
   padding: 20px; /* Add some padding for spacing */
   word-spacing: .5em;
   
@@ -106,7 +109,7 @@ body{
   border: 2px solid #4b023b;
   border-radius: 2rem;
   color: #e9eff0;
-  font-family: monserrat, sans-serif;
+
   font-size: 1.8rem; /* Responsive font size */
   font-weight: 500;
   cursor: pointer;
