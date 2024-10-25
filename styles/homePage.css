@@ -78,14 +78,18 @@ body{
   font-size: 35px;
   
   padding: 20px; /* Add some padding for spacing */
-  word-spacing: .5em;
+  word-spacing: .3em;
   
 }
+.heading_link {
+  text-decoration: none; /* Remove underline from link */
+  color: white; /* Set link color to white */
+}
 .p-intro1 span {
-  color: #eb1717;
+  color: #eb17b6;
   font-weight: bold;
   align-items: center;
-  word-spacing: .2em;
+  word-spacing: .1em;
   
   
 }
