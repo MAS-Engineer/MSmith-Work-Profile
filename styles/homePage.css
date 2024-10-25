@@ -1,9 +1,9 @@
 
 
 body{
-  margin: 0;
+  /*margin: 0;*/
   background-color: black; /* Background color */ 
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
@@ -89,9 +89,7 @@ body{
   color: #eb17b6;
   font-weight: bold;
   align-items: center;
-  word-spacing: .1em;
-  
-  
+  word-spacing: .1em;  
 }
 
 .viewWorkContainer {
