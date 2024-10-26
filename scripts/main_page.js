@@ -51,6 +51,23 @@ function closeModal() {
     document.body.style.overflow = 'auto'; // Enable background scrolling
 }
 
+//Update Projects to display years of experience for 5 seconds
+    // Function to change captions
+    function changeCaption(captionElement, alternateText) {
+        const originalText = captionElement.textContent;
+        captionElement.textContent = alternateText;
+        setTimeout(() => {
+            captionElement.textContent = originalText;
+        }, 5000);
+    }
+
+    // Select all caption elements and apply the change
+    const captions = document.querySelectorAll('.caption');
+    captions.forEach((caption, index) => {
+        const alternateText = `Alternate Text ${index + 1}`; // Customize this text as needed
+        caption.addEventListener('mouseover', () => changeCaption(caption, alternateText));
+    });
+
 
   /*Code to implement an email service
     document.getElementById('form-Submit').addEventListener('click', function() {
