@@ -113,7 +113,7 @@
   top: 2rem;
   padding: 0;
   align-items: center;
-  margin-bottom: 5%; /* Space below heading */
+  margin-bottom: 10%; /* Space below heading */
   align-items: center; /* Center content */
   text-align: center; /* Center the heading */  
   box-sizing: border-box; /* Border-box for padding/margins */
@@ -152,6 +152,11 @@
       font-size: 2rem; /* Increase font size for mobile */
       margin: 2rem auto; /* Adjust margins for smaller screens */
       
+  }
+  .gameHeading{
+    font-size: 1rem;
+    margin: 3rem auto; /* Adjust margins for smaller screens */
+
   }
 
   .project-list {
