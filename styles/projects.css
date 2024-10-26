@@ -5,19 +5,23 @@
   max-width: 18rem;
   width: 80%;
   display: flex;
-  margin: 8rem;
+  margin: 1rem;
   position: relative;
-  left: 10rem;
-  top: 2.3rem;
+  top: 1rem;
   padding: 0;
   align-items: center;
-  margin-bottom: 80px; /* Space below heading */
+  margin-bottom: 10%; /* Space below heading */
+  align-items: center; /* Center content */
+  text-align: center; /* Center the heading */  
+  box-sizing: border-box; /* Border-box for padding/margins */
 }
 
 .projects {
-  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content */
+  padding: 2rem; /* Add some padding */
   background-color: #5a0753; /* Background color */
-  padding-left: 3vw;
 }
 
 .project-list {
@@ -99,20 +103,22 @@
 /* Game embed code */
 .gameHeading {
   color: white;
-  font-size: 3vw; /* Fixing font-size value */
+  font-size: 3vw;
   border-bottom: 18px solid #a253a5;
   max-width: 18rem;
   width: 80%;
   display: flex;
-  margin: 4rem;
+  margin: 1rem;
   position: relative;
-  left: 10rem;
-  top: 2rem;
+  top: 1rem;
   padding: 0;
   align-items: center;
-  margin-bottom: 40px; /* Space below heading */
-}
+  margin-bottom: 10%; /* Space below heading */
+  align-items: center; /* Center content */
+  text-align: center; /* Center the heading */  
+  box-sizing: border-box; /* Border-box for padding/margins */
 
+}
 .game {
   align-items: center;
   margin: 0;
@@ -143,7 +149,7 @@
 
 @media (max-width: 480px) {
   .projectsHeading {
-      font-size: 5vw; /* Increase font size for mobile */
+      font-size: 2rem; /* Increase font size for mobile */
       margin: 2rem auto; /* Adjust margins for smaller screens */
       
   }
@@ -155,6 +161,6 @@
 
   .project-list li {
       margin-bottom: 10px; /* Adjust spacing */
-      font-size: 0.8rem; /* Adjust font size */
+      font-size: 1rem; /* Adjust font size */
   }
 }
