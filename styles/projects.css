@@ -110,10 +110,10 @@
   display: flex;
   margin: 1rem;
   position: relative;
-  top: 1rem;
+  top: 2rem;
   padding: 0;
   align-items: center;
-  margin-bottom: 10%; /* Space below heading */
+  margin-bottom: 5%; /* Space below heading */
   align-items: center; /* Center content */
   text-align: center; /* Center the heading */  
   box-sizing: border-box; /* Border-box for padding/margins */

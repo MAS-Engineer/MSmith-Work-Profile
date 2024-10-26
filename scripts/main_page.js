@@ -51,12 +51,13 @@
         document.body.style.overflow = 'auto'; // Enable background scrolling
     }
 
-//Update Projects to display years of experience for 5 seconds
+    //Update Projects to display years of experience for 7 seconds
 
     function updateCaption(element, newText) {
         const originalText = element.textContent;
         element.textContent = newText;
-        
+    
+        // then revert back to original text   
         setTimeout(() => {
             element.textContent = originalText;
         }, 7000);

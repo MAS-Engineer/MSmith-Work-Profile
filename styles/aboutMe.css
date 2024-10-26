@@ -14,7 +14,6 @@
 .aboutHeading {
   color: white;
   font-size: 3rem;
-  font-family: monserrat, sans-serif;
   border-bottom: 18px solid #a253a5;
   width: 16rem;
   display: block;
@@ -43,12 +42,45 @@
 }
 .profile_description{
   color:rgb(196, 190, 195);
-  font-family: monserrat, sans-serif;
+
   max-width: 700px;
-  font-size: 1vw;
+  font-size: 1.5vw;
   line-height: 1.8;
   margin-top: 2px;
   align-items: left;
+  margin-bottom: 30px;
+}
+.workExperienceText{
+  color: white;
+  font-size: 1rem;
+  border-bottom: 10px solid #a253a5;
+  width: 18rem;
+  display: block;
+  margin: 1rem;
+  position: relative;
+  align-items: center;
+  left: 3.5rem;
+  cursor: pointer;
+}
+.tooltip-text {
+  visibility: hidden;
+  width: 120px; /* Adjust width as needed */
+  background-color: #a253a5; /* Tooltip background */
+  color: white; /* Tooltip text color */
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%; /* Position above the div */
+  left: 50%;
+  margin-left: -60px; /* Center the tooltip */
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s; /* Fade in effect */
+}
+.workExperienceText:hover .tooltip-text{
+  visibility: visible;
+  opacity: 1; /* Show the tooltip */
 }
 
 .image-gallery {
@@ -56,7 +88,7 @@
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
   gap: 15px; /* Space between items */
   padding: 20px; /* Padding around the gallery */
-
+  margin-bottom: 3vh;
 }
 
 .gallery-item {
@@ -91,7 +123,7 @@
 /* Media queries for finer control */
 @media (max-width: 768px) {
   .profile_description {
-      font-size: 6vw; /* Increase font size for tablets */
+  font-size: 6vw; /* Increase font size for tablets */
   }
 }
 
