@@ -150,7 +150,7 @@
 @media (max-width: 480px) {
   .projectsHeading {
       font-size: 2rem; /* Increase font size for mobile */
-      margin: 2rem auto; /* Adjust margins for smaller screens */
+      margin:.5rem ; /* Adjust margins for smaller screens */
       
   }
   .gameHeading{

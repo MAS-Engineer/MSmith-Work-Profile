@@ -44,33 +44,4 @@
   cursor: pointer;
 }
 
-/* Tooltip container */
-.tooltip-container {
-  position: relative; /* Needed for absolute positioning of the tooltip */
-  display: inline-block; /* Makes the container fit the image */
-}
-
-/* Tooltip text styles */
-.tooltip-text {
-  visibility: hidden; /* Hide tooltip by default */
-  width: 120px; /* Width of the tooltip */
-  background-color: #f7f0f4; /* Background color of tooltip */
-  color: #5c064d; /* Text color of tooltip */
-  text-align: center; /* Centered text */
-  border-radius: 5px; /* Rounded corners */
-  padding: 5px; /* Padding inside the tooltip */
-  position: absolute; /* Position it above the image */
-  z-index: 1; /* Ensure it appears above other content */
-  bottom: 125%; /* Position it above the image */
-  left: 50%; /* Center horizontally */
-  margin-left: -60px; /* Offset for tooltip width */
-  opacity: 0; /* Start with hidden opacity */
-  transition: opacity 0.3s; /* Smooth transition for visibility */
-}
-
-/* Show the tooltip on hover */
-.tooltip-container:hover .tooltip-text {
-  visibility: visible; /* Show the tooltip */
-  opacity: 1; /* Make it visible */
-}
 

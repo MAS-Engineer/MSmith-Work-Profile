@@ -1,31 +1,9 @@
-
-
 body{
   /*margin: 0;*/
   background-color: black; /* Background color */ 
   overflow-x: hidden;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-}
-@media(max-width: 768px){
-  body{
-    font-size: 4vw;
-    width: 100%;
-    margin: auto;    
-  }
-  .heading_link {
-    text-decoration: none; /* Remove underline from link */
-    color: white; /* Set link color to white */
-  }
-}
-@media(max-width: 480px){
-  body{
-    font-size: 6vw;
-  }
-  .heading_link {
-    text-decoration: none; /* Remove underline from link */
-    color: white; /* Set link color to white */
-  }
 }
 .marquee {
   width: 100%; /* Full width */
@@ -62,7 +40,6 @@ body{
   color: white;
   text-align: center;
   padding: 50em;
-  
 }
 
 .resumeLink{
@@ -130,7 +107,35 @@ body{
 .viewWorkButton:hover {
   background-color: #4b023b; /* Change on hover */
   color: rgb(245, 222, 247); /* Change text color on hover */
- 
+
 }
 
-
+.updatedText{
+  font-size: 2vh;
+  align-items: left;
+}
+@media(max-width: 768px){
+  body{
+    font-size: 4vw;
+    width: 100%;
+    margin: auto;    
+  }
+  .heading_link {
+    text-decoration: none; /* Remove underline from link */
+    color: white; /* Set link color to white */
+  }
+}
+@media(max-width: 480px){
+  body{
+    font-size: 6vw;
+  }
+  .heading_link {
+    text-decoration: none; /* Remove underline from link */
+    color: white; /* Set link color to white */
+  }
+  .updatedText{
+    
+  display: flex;
+  justify-content: center; /* Center text in button */
+  }
+}

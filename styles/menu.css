@@ -45,20 +45,17 @@ ul {
   margin-right: 2rem;
   
 }
-.updatedText{
-  font-size: 2vh;
-  align-items: left;
-}
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .navigation-bar {
       font-size: 4vw; /* Increase font size for tablets */
-      margin: 5rem auto; /* Adjust margins for smaller screens */
+      margin: 1.8rem auto; /* Adjust margins for smaller screens */
   }
 
   .ul {
-      margin-bottom: 15px; /* Adjust spacing */
+      margin-bottom: 10vw; /* Adjust spacing */
   }
 }
 
@@ -69,6 +66,6 @@ ul {
   }
 
   .ul {
-      margin-bottom: 10px; /* Adjust spacing */
+      margin-bottom: 8vw; /* Adjust spacing */
   }
 }

@@ -68,6 +68,7 @@
   background-color: #a253a5; /* Tooltip background */
   color: white; /* Tooltip text color */
   text-align: center;
+  font-size: 11px;
   border-radius: 5px;
   padding: 5px;
   position: absolute;
