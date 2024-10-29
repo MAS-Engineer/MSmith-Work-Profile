@@ -71,6 +71,23 @@
         }, 7000);
     }
 
+     // Checks if visit count exists in local storage
+     let visitCount = localStorage.getItem('visitCount');
+
+     // If it doesn't exist, initialize it to 0
+     if (visitCount === null) {
+         visitCount = 0;
+     }
+ 
+     // Increment visit count
+     visitCount++;
+ 
+     // Store the updated count back in local storage
+     localStorage.setItem('visitCount', visitCount);
+ 
+     // Display the visit count
+     document.getElementById('visitCount').textContent = visitCount;
+
   /*Code to implement an email service
     document.getElementById('form-Submit').addEventListener('click', function() {
         // Get form values
