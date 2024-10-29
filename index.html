@@ -46,6 +46,7 @@
         </div>        
     </section>
     <p class="updatedText">Last Updated On: <span id="lastUpdated"></span></p>
+    <p class="siteVisits">Site Visit Counter: </p>
 
      <!--Menu navigation code-->
     <nav class="navigation-bar js-main-menu">
@@ -170,16 +171,16 @@
           <li>
             <h3>Sample JIRA Ticket Template</h3>
             <p>A template showcasing details of an effective ticket template for defects or enhancements.</p>
-            <a href="#" onclick="openModal(); return fales;">View Template
-              
-            </a>
+            <a href="#" onclick="openModal(); return fales;">View Template</a>
           </li>       
 
           <!-- Pop up Structure -->
-          <div id="imageModal" style="display:none; position:fixed; top:0; left:3rem; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.8); z-index:1000;">
-            <span style="color:white; cursor:pointer; position:absolute; top:50px; right:90px; font-size:30px;" onclick="closeModal()">&times;</span>
-            <img src="images/Bug_Template.png" alt="Bug Template" style="display:block; margin:auto; max-width:80%; max-height:80%; top:50%; transform:translateY(-50%); position:absolute;">
-          </div>
+          <div id="imageModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.8); z-index: 1000; overflow:hidden;">
+            <div style="position:relative; width:80%; max-width:800px; margin:auto; top:50%; transform:translateY(-50%); background:white; border-radius:8px; padding:20px; overflow-y:auto; max-height:80%;">
+                <span style="color:black; cursor:pointer; position:absolute; top:10px; right:10px; font-size:30px;" onclick="closeModal()">&times;</span>
+                <img id="modalImage" src="images/Bug_Template.png" alt="Bug Template" style="display:block; margin:auto; max-width:100%; cursor:pointer;" onclick="zoomImage(this);">
+            </div>
+        </div>
         
           <!-- Add more projects here -->           
       </ul>    

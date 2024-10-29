@@ -41,6 +41,8 @@
           }
       });
   });
+
+  //Code for when viewing Project section for JIRA ticket example
   function openModal() {
     document.getElementById('imageModal').style.display = 'block';
     document.body.style.overflow = 'hidden'; // Disable background scrolling
@@ -49,6 +51,12 @@
     function closeModal() {
         document.getElementById('imageModal').style.display = 'none';
         document.body.style.overflow = 'auto'; // Enable background scrolling
+    }
+    //Allow zooming of image, image font was very small
+    function zoomImage(img) {
+        const isZoomed = img.style.transform === "scale(2)";
+        img.style.transform = isZoomed ? "scale(1)" : "scale(2)";
+        img.style.transition = "transform 0.3s ease"; // Smooth transition
     }
 
     //Update Projects to display years of experience for 7 seconds
