@@ -1,8 +1,7 @@
-.navigation-bar{
-  font-family:  Calibri;
-  font-size: 30PX;
+.navigation-bar {
+  font-family: Calibri;
+  font-size: 30px;
   position: sticky;
-  position: -webkit-sticky;
   top: 0;
   display: flex;
   justify-content: flex-end;
@@ -15,73 +14,56 @@
   margin-top: 2rem;
   z-index: 1;  
   cursor: pointer;
-  
 }
+
 .navigation {
   display: flex;
-  margin-right: 10rem;
+  margin-right: 10rem; /* Consider adjusting for smaller screens */
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 1px;
-}
-ul {
-  display: flex;
   list-style-type: none;
-  text-decoration: none;
-  margin-inline-start: 0px;
-  margin-inline-end: 20px;
-  padding-inline-start: 40px;
-  unicode-bidi: isolate;
+  margin: 0; /* Reset margins */
+  padding: 0; /* Reset padding */
   white-space: nowrap;
 }
-.navigation-item{
+
+.navigation-item {
   margin-right: 2rem;
   color: rgb(231, 154, 231);
-  
+  transition: color 0.3s;
 }
-.navigation-item :hover{
-  margin-right: 2rem;
+
+.navigation-item:hover {
   color: rgb(235, 222, 235);
-
-  
 }
-.navigation-item:not( :last-child){
+
+.navigation-item:not(:last-child) {
   margin-right: 2rem;
-  
-  
 }
-
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .navigation-bar {
-      font-size: 4vw; /* Increase font size for tablets */
-      margin: 1.8rem auto; /* Adjust margins for smaller screens */
+    font-size: 4vw; /* Increase font size for tablets */
+    margin: 1.8rem auto; /* Adjust margins for smaller screens */
+    justify-content: center; /* Center items */
   }
 
-  .ul {
-      margin-bottom: 10vw; /* Adjust spacing */
+  .navigation {
+    margin-right: 5rem; /* Adjust for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .navigation-bar {
-      font-size: 5vw; /* Increase font size for mobile */
-      margin: 3rem auto; /* Adjust margins for smaller screens */    
-      display: flex;
-      justify-content: center; /* Center text in button */      
+    font-size: 5vw; /* Increase font size for mobile */
+    margin: 3rem auto; /* Adjust margins for smaller screens */    
+    justify-content: center; /* Center items */
   }
 
-  .ul {
-      margin-bottom: 8vw; /* Adjust spacing */
-  }
-  .navigation-item{
-    display: flex;
+  .navigation-item {
     margin-right: 1rem;
-    color: rgb(231, 154, 231);   
     font-size: 1.2rem;
-    font-weight: 500;
-    
   }
-
 }

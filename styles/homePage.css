@@ -1,19 +1,21 @@
-body{
-  /*margin: 0;*/
-  background-color: black; /* Background color */ 
+body {
+  margin: 0; /* Reset default margin */
+  background-color: black; /* Background color */
   overflow-x: hidden;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+
 .marquee {
   width: 100%; /* Full width */
   overflow: hidden; /* Hide overflow */
   background: #6b0585; /* Background color for marquee */
   color: white; /* Text color */
   white-space: nowrap; /* Prevent line breaks */
-  font-size: 20px;
+  font-size: 20px; /* Base font size */
   margin-top: 1em;
 }
+
 .marquee p {
   display: inline-block; /* Allow inline block for scrolling */
   padding: 1rem 2rem; /* Padding for aesthetics */
@@ -22,37 +24,40 @@ body{
 
 @keyframes scroll {
   0% {
-      transform: translateX(100%); /* Start off-screen right */
+    transform: translateX(100%); /* Start off-screen right */
   }
   100% {
-      transform: translateX(-100%); /* End off-screen left */
+    transform: translateX(-100%); /* End off-screen left */
   }
 }
+
 .star {
   position: absolute;
-  border-radius:0;
+  border-radius: 0;
   background: white; /* Star color */
   opacity: 0.8;
 }
+
 .content {
   position: relative;
   z-index: 1; /* Places content above stars */
   color: white;
   text-align: center;
-  padding: 50em;
+  padding: 50em; /* Large padding may need adjustments */
 }
 
-.resumeLink{
+.resumeLink {
   font-size: 20px;
   color: yellow;
   margin-top: 20%;
   margin-left: 5%;
 }
-.viewWorkText{
+
+.viewWorkText {
   align-items: center;
   text-align: center;  
-
 }
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -60,19 +65,17 @@ body{
   text-align: center; /* Center text */
   color: white;
   font-size: 35px;
-  
   padding: 20px; /* Add some padding for spacing */
-  
-  
 }
+
 .heading_link {
   text-decoration: none; /* Remove underline from link */
   color: white; /* Set link color to white */
 }
+
 .p-intro1 span {
   color: #eb17b6;
   font-weight: bold;
-  align-items: center;
   word-spacing: .1em;  
 }
 
@@ -80,10 +83,9 @@ body{
   display: flex; /* Use flexbox */
   justify-content: center; /* Center the button */
   margin-top: 2.4rem; /* Space above the button */
-  
 }
-.viewWorkButton{
-  
+
+.viewWorkButton {
   display: flex;
   align-items: center;
   justify-content: center; /* Center text in button */
@@ -95,69 +97,54 @@ body{
   border: 2px solid #4b023b;
   border-radius: 2rem;
   color: #e9eff0;
-
   font-size: 1.8rem; /* Responsive font size */
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s; /* Add transition */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
+
 .viewWorkButton:hover {
   background-color: #4b023b; /* Change on hover */
   color: rgb(245, 222, 247); /* Change text color on hover */
-
 }
-.updatedText{
+
+.updatedText {
   font-size: 1.5vh;
-  align-items: left;
   margin: 1vh;
 }
+
 .siteVisits {
   font-size: 1.5vh;
   margin: 1vh;
   color: white;
 }
-@media(max-width: 768px){
-  body{
-    font-size: 4vw;
-    width: 100%;
-    margin: auto;    
-  }
-  .heading_link {
-    text-decoration: none; /* Remove underline from link */
-    color: white; /* Set link color to white */
-  }
-}
-@media(max-width: 480px){
-  body{
-    font-size: 6vw;
-  }
- 
-  .updatedText, .siteVisits{
-    
-  display: flex;
-  justify-content: center; /* Center text in button */
-  }
-  .resumeLink{
-    display: flex;
-    justify-content: center; /* Center text in button */
-    margin-top: 5%;
+
+@media(max-width: 768px) {
+  body {
+    font-size: 4vw; /* Responsive font size */
   }
   .marquee {
-    width: 100%; /* Full width */
-    overflow: hidden; /* Hide overflow */
-    background: #6b0585; /* Background color for marquee */
-    color: white; /* Text color */
-    white-space: nowrap; /* Prevent line breaks */
-    font-size: 12px;
-    margin-top: 1em;
+    font-size: 16px; /* Adjust font size for smaller screens */
   }
-  .marquee p {
-    display: inline-block; /* Allow inline block for scrolling */
-    padding: 1rem 1rem; /* Padding for aesthetics */
-    animation: scroll 10s linear infinite; /* Animation properties */
-  }
-  .p-intro1{
-    margin-top: 0m;
+}
+
+@media(max-width: 480px) {
+  body {
+    font-size: 6vw; /* Responsive font size */
   }
 
+  .updatedText, .siteVisits {
+    display: flex;
+    justify-content: center; /* Center text */
+  }
+
+  .resumeLink {
+    display: flex;
+    justify-content: center; /* Center text */
+    margin-top: 5%;
+  }
+
+  .marquee {
+    font-size: 12px; /* Smaller font for mobile */
+  }
 }
