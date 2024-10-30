@@ -29,17 +29,18 @@
 }
 
 .navigation-item {
-  margin-right: 2rem;
+  margin-right: 1rem;
   color: rgb(231, 154, 231);
   transition: color 0.3s;
 }
 
-.navigation-item:hover {
-  color: rgb(235, 222, 235);
+
+.navigation :hover{
+  color:  rgb(231, 154, 231);
 }
 
 .navigation-item:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 /* Media Queries for Responsiveness */
@@ -47,11 +48,15 @@
   .navigation-bar {
     font-size: 4vw; /* Increase font size for tablets */
     margin: 1.8rem auto; /* Adjust margins for smaller screens */
-    justify-content: center; /* Center items */
+    justify-content: center; /* Center items */  
+   
   }
 
   .navigation {
-    margin-right: 5rem; /* Adjust for smaller screens */
+    margin-right: 1rem; /* Adjust for smaller screens */
+  }
+  .navigation :hover{
+    color:  rgb(231, 154, 231);
   }
 }
 
@@ -63,6 +68,7 @@
   }
 
   .navigation-item {
+    display: flex;
     margin-right: 1rem;
     font-size: 1.2rem;
   }

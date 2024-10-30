@@ -21,8 +21,8 @@
   display: flex;
   flex-direction: column; /* Stack elements vertically */
   align-items: center; /* Center content */
-  padding: 2rem; /* Add some padding */
-  background-color: #5a0753; /* Background color */
+  padding: 1.75rem; /* Add some padding */
+  background-color: #a253a5; /* Background color */
 }
 
 .project-list {
@@ -161,7 +161,7 @@
   }
 
   .project-list {
-      max-height: 300px; /* Set a fixed height for scrolling */
+      max-height: 450px; /* Set a fixed height for scrolling */
       grid-template-columns: repeat(1, 1fr); /* Switch to 1 column */
   }
 

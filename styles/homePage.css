@@ -111,12 +111,14 @@ body {
 .updatedText {
   font-size: 1.5vh;
   margin: 1vh;
+  word-spacing: 0.1rem;
 }
 
 .siteVisits {
   font-size: 1.5vh;
   margin: 1vh;
   color: white;
+  word-spacing: 0.1rem;
 }
 
 @media(max-width: 768px) {
@@ -136,6 +138,7 @@ body {
   .updatedText, .siteVisits {
     display: flex;
     justify-content: center; /* Center text */
+  
   }
 
   .resumeLink {
