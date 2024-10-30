@@ -47,7 +47,6 @@ body{
   color: yellow;
   margin-top: 20%;
   margin-left: 5%;
-
 }
 .viewWorkText{
   align-items: center;
@@ -100,16 +99,13 @@ body{
   font-size: 1.8rem; /* Responsive font size */
   font-weight: 500;
   cursor: pointer;
-
   transition: background-color 0.3s; /* Add transition */
-
 }
 .viewWorkButton:hover {
   background-color: #4b023b; /* Change on hover */
   color: rgb(245, 222, 247); /* Change text color on hover */
 
 }
-
 .updatedText{
   font-size: 1.5vh;
   align-items: left;
@@ -135,13 +131,33 @@ body{
   body{
     font-size: 6vw;
   }
-  .heading_link {
-    text-decoration: none; /* Remove underline from link */
-    color: white; /* Set link color to white */
-  }
-  .updatedText{
+ 
+  .updatedText, .siteVisits{
     
   display: flex;
   justify-content: center; /* Center text in button */
   }
+  .resumeLink{
+    display: flex;
+    justify-content: center; /* Center text in button */
+    margin-top: 5%;
+  }
+  .marquee {
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide overflow */
+    background: #6b0585; /* Background color for marquee */
+    color: white; /* Text color */
+    white-space: nowrap; /* Prevent line breaks */
+    font-size: 12px;
+    margin-top: 1em;
+  }
+  .marquee p {
+    display: inline-block; /* Allow inline block for scrolling */
+    padding: 1rem 1rem; /* Padding for aesthetics */
+    animation: scroll 10s linear infinite; /* Animation properties */
+  }
+  .p-intro1{
+    margin-top: 0m;
+  }
+
 }

@@ -23,7 +23,6 @@
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 1px;
-  color: white;
 }
 ul {
   display: flex;
@@ -33,12 +32,16 @@ ul {
   margin-inline-end: 20px;
   padding-inline-start: 40px;
   unicode-bidi: isolate;
-  color: white;
 }
-
-.navigation-item :hover{
+.navigation-item{
   margin-right: 2rem;
   color: rgb(231, 154, 231);
+  
+}
+.navigation-item :hover{
+  margin-right: 2rem;
+  color: rgb(235, 222, 235);
+
   
 }
 .navigation-item:not( :last-child){
@@ -62,7 +65,9 @@ ul {
 @media (max-width: 480px) {
   .navigation-bar {
       font-size: 5vw; /* Increase font size for mobile */
-      margin: 3rem auto; /* Adjust margins for smaller screens */
+      margin: 3rem auto; /* Adjust margins for smaller screens */    
+      display: flex;
+      justify-content: center; /* Center text in button */      
   }
 
   .ul {
