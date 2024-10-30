@@ -32,6 +32,7 @@ ul {
   margin-inline-end: 20px;
   padding-inline-start: 40px;
   unicode-bidi: isolate;
+  white-space: nowrap;
 }
 .navigation-item{
   margin-right: 2rem;
@@ -46,6 +47,7 @@ ul {
 }
 .navigation-item:not( :last-child){
   margin-right: 2rem;
+  
   
 }
 
@@ -73,4 +75,13 @@ ul {
   .ul {
       margin-bottom: 8vw; /* Adjust spacing */
   }
+  .navigation-item{
+    display: flex;
+    margin-right: 1rem;
+    color: rgb(231, 154, 231);   
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+  }
+
 }
