@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="styles/contactMe.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/12-rock-paper-scissors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
   </head>
   <body> 
@@ -48,26 +50,28 @@
     <p class="updatedText">Last Updated On: <span id= "lastUpdated"></span></p>
     <p class="siteVisits">Site Visits: <span id="visitCount"></span></p>
 
-     <!--Menu navigation code-->
+    <!--Menu navigation code with hamburger menu on smaller screens-->    
      <nav class="navigation-bar js-main-menu">
-      <ul class="navigation">
-        <li class="navigation-item" id="navHome">
-          <a href="#hero">Home</a>
-        </li>
-        <li class="navigation-item" id="navAbout">
-          <a href="#about">About Me</a>
-        </li>
-        <li class="navigation-item" id="navProjects">
-          <a href="#projects">Projects</a>
-        </li>
-        <li class="navigation-item" id="navContact">
-          <a href="#contactMe">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
+      <div class="dropdown">
+        <button class="dropdown-toggle"><i class="fas fa-bars"></i></button>
+        <ul class="navigation">
+          <li class="navigation-item" id="navHome">
+            <a href="#hero">Home</a>
+          </li>
+          <li class="navigation-item" id="navAbout">
+            <a href="#about">About Me</a>
+          </li>
+          <li class="navigation-item" id="navProjects">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="navigation-item" id="navContact">
+            <a href="#contactMe">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>  
     
        <!--About section code begins-->
-
        <section class="about-columns" id="about">            
         <h2 class="aboutHeading">About</h2>                 
         <img class="aboutPageImage" src="images/Me.jpg" alt="Maria Smith - The Engineer">
@@ -186,9 +190,6 @@
       </section class="game">
         <h2 class="gameHeading">Let's Play!</h2>
         <iframe class="game" src="12-rock-paper-scissors.html" title="Rock-Paper-Scissors"></iframe>
-
-
-
       <section>
 
       </section>
@@ -242,16 +243,11 @@
         </div>
         <p class="copyright">Maria Smith ©2024</p>
        
-      </footer>
-   
-     
+      </footer>     
 
     <script src="scripts/main_page.js"></script>
     <script src="scripts/12-rock-paper-scissors.js"></script>
-    
-
-
-   
+       
   </body>
 </html>
 

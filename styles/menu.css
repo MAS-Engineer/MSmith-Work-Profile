@@ -1,5 +1,4 @@
 .navigation-bar {
-  font-family: Calibri;
   font-size: 30px;
   position: sticky;
   top: 0;
@@ -15,7 +14,6 @@
   z-index: 1;  
   cursor: pointer;
 }
-
 .navigation {
   display: flex;
   margin-right: 10rem; /* Consider adjusting for smaller screens */
@@ -27,55 +25,80 @@
   padding: 0; /* Reset padding */
   white-space: nowrap;
 }
-
 .navigation-item {
   margin-right: 1rem;
   color: rgb(231, 154, 231);
   transition: color 0.3s;
 }
-
-
-.navigation :hover{
+.navigation-item :hover{
   color:  rgb(231, 154, 231);
 }
-
 .navigation-item:not(:last-child) {
   margin-right: 1rem;
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .navigation-bar {
-    font-size: 4vw; /* Increase font size for tablets */
-    margin: 1.8rem auto; /* Adjust margins for smaller screens */
-    justify-content: center; /* Center items */  
+/* Hide the hamburger menu on larger screens */
+@media (min-width: 769px) {
+  .dropdown-toggle {
+    display: none; /* Hide the hamburger icon */
+  }
+  
+  .navigation {
+    display: flex; /* Show the navigation items */
+  }
+  .navigation-bar{
    
+    cursor: pointer;
   }
 
-  .navigation {
-    margin-right: 1rem; /* Adjust for smaller screens */
-  }
-  .navigation :hover{
-    color:  rgb(231, 154, 231);
+  .navigation-item a {
+    color: rgb(231, 154, 231); /* Set color for links */
   }
 }
 
-@media (max-width: 480px) {
-  .navigation-bar {
-    font-size: 5vw; /* Increase font size for mobile */
-    margin: 3rem auto; /* Adjust margins for smaller screens */    
-    justify-content: center; /* Center items */
-  }
-
-  .navigation-item {
-    display: flex;
-    margin-right: .75rem;
-    font-size: 1.2rem;
-  }
+@media (max-width: 768px) {
   .navigation {
-    margin-right: .50rem; /* Adjust for smaller screens */
+    display: none; /* Hide the original navigation */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute; /* Position the dropdown */
+    top: 6rem; /* Position it below the navbar */
+    right: 0; /* Align to the right */
+    background-color: rgba(40, 40, 40, 0.95);
+    width: 100%; /* Full width */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    z-index: 1; /* Ensure it appears above other elements */
   }
-  .navigation :hover{
-    color:  rgb(231, 154, 231);
+  .navigation-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  .dropdown-toggle {
+    font-size: 2rem; /* Style the dropdown button */
+    cursor: pointer;
+    background: transparent; /* Style as needed */
+    border: none; /* Remove default button border */
+    color: rgba(230, 127, 230, 0.904); /* Text color */
+    align-items: center;
+  }
+  .dropdown.active .navigation {
+    display: flex; /* Show dropdown when active */
+  }
+  .dropdown {
+    display:flex; /* Always show dropdown button */
+  }
+}
+/* Dropdown links */
+.navigation-item a {
+  color: rgb(250, 244, 244); /* Link color */
+  padding: 12px 16px; /* Padding */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Block display for links */
+}
+
+/* Change color on hover */
+.navigation-item a:hover {
+  background-color: rgb(29, 1, 29); /* Hover color */
 }

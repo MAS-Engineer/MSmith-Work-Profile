@@ -1,3 +1,5 @@
+//#region mouse over effect for top canvas stars
+
   const numStars = 300; // Number of stars
   const stars = [];
 
@@ -13,15 +15,18 @@
       document.body.appendChild(star);
       stars.push(star);
   }
+  //#endregion
 
+  //#region Website's last updated date - automatically updates
   //Last updated date insert without time
   //document.getElementById("lastUpdated").textContent = document.lastModified; includes time
 
   const lastModified = new Date(document.lastModified);
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   document.getElementById("lastUpdated").textContent = lastModified.toLocaleDateString(undefined, options);
+  //#endregion
 
-
+  //#region mouse over effect for about me experience section
   // Mouse move effect
   document.addEventListener('mousemove', (e) => {
       stars.forEach((star) => {
@@ -41,7 +46,17 @@
           }
       });
   });
+  //#endregion
 
+  //#region Updates menu to hamburger for smaller screens
+  //Javascript for menu to become dropdown as screen size decreases
+  document.querySelector('.dropdown-toggle').addEventListener('click', function() {
+    const dropdown = document.querySelector('.dropdown'); // Select the dropdown
+    dropdown.classList.toggle('active'); // Toggle the 'active' class to show/hide
+  });
+//#endregion
+
+//#region Modal for JIRA  ticket display
   //Code for when viewing Project section for JIRA ticket example
   function openModal() {
     document.getElementById('imageModal').style.display = 'block';
@@ -58,6 +73,9 @@
         img.style.transform = isZoomed ? "scale(1)" : "scale(2)";
         img.style.transition = "transform 0.3s ease"; // Smooth transition
     }
+    //#endregion
+
+    //#region Code that displays years of experience for 7 seconds & visitor count
 
     //Update Projects to display years of experience for 7 seconds
 
@@ -87,7 +105,9 @@
  
      // Display the visit count
      document.getElementById('visitCount').textContent = visitCount;
+     //#endregion
 
+     //#region unused code
   /*Code to implement an email service
     document.getElementById('form-Submit').addEventListener('click', function() {
         // Get form values
@@ -128,4 +148,5 @@
             });
     });
 */
+//#endregion
  
