@@ -79,6 +79,21 @@
   opacity: 0; /* Start hidden */
   transition: opacity 0.3s; /* Fade in effect */
 }
+.headingInitiatives{
+  color: #a253a5;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration:dotted;
+
+}
+.initiativesList{
+  margin: 2vw;
+}
+.initiativeTitle{
+  color: #a253a5;
+  line-height: 4ch;
+
+}
 .workExperienceText:hover .tooltip-text{
   visibility: visible;
   opacity: 1; /* Show the tooltip */
@@ -131,5 +146,14 @@
 @media (max-width: 480px) {
   .profile_description {
       font-size: 3.5vw; /* Increase font size for mobile */
+  }
+  .initiativesList{
+    margin: 2vw;
+    font-size: 1rem;
+  }
+  .initiativeTitle{
+    color: #a253a5;
+    line-height: 3ch;
+  
   }
 }

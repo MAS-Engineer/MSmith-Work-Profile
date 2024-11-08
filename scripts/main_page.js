@@ -50,10 +50,21 @@
 
   //#region Updates menu to hamburger for smaller screens
   //Javascript for menu to become dropdown as screen size decreases
-  document.querySelector('.dropdown-toggle').addEventListener('click', function() {
-    const dropdown = document.querySelector('.dropdown'); // Select the dropdown
-    dropdown.classList.toggle('active'); // Toggle the 'active' class to show/hide
-  });
+  // Get the dropdown toggle and menu items
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const menuItems = document.querySelectorAll('.navigation-item');
+
+    document.querySelector('.dropdown-toggle').addEventListener('click', function() {
+        const dropdown = document.querySelector('.dropdown'); // Select the dropdown
+        dropdown.classList.toggle('active'); // Toggle the 'active' class to show/hide
+    });
+    // Close the dropdown when a menu item is clicked
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+        const dropdown = document.querySelector('.dropdown');
+        dropdown.classList.remove('active'); // Close the dropdown
+        });
+    });
 //#endregion
 
 //#region Modal for JIRA  ticket display
