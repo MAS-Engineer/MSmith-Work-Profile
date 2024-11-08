@@ -69,7 +69,13 @@
 
   .navigation-item {
     display: flex;
-    margin-right: 1rem;
+    margin-right: .75rem;
     font-size: 1.2rem;
+  }
+  .navigation {
+    margin-right: .50rem; /* Adjust for smaller screens */
+  }
+  .navigation :hover{
+    color:  rgb(231, 154, 231);
   }
 }

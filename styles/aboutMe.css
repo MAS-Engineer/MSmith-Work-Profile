@@ -124,12 +124,12 @@
 /* Media queries for finer control */
 @media (max-width: 768px) {
   .profile_description {
-  font-size: 6vw; /* Increase font size for tablets */
+  font-size: 3.5vw; /* Increase font size for tablets */
   }
 }
 
 @media (max-width: 480px) {
   .profile_description {
-      font-size: 4vw; /* Increase font size for mobile */
+      font-size: 3.5vw; /* Increase font size for mobile */
   }
 }

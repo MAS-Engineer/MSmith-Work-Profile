@@ -1,12 +1,12 @@
 /*Heading "My Projects"*/
-.rojectsHeading {
+.projectsHeading {
   color: white;
   font-size: 3vw;
   border-bottom: 18px solid #a253a5;
   max-width: 18rem;
   width: 80%;
   display: flex;
-  margin: 1rem;
+  margin: .50rem;
   position: relative;
   top: 1rem;
   padding: 0;
@@ -21,8 +21,8 @@
   display: flex;
   flex-direction: column; /* Stack elements vertically */
   align-items: center; /* Center content */
-  padding: 1.75rem; /* Add some padding */
-  background-color: #a253a5; /* Background color */
+  padding: 1.60rem; /* Add some padding */
+  background-color:  #5b0f5e; /* Background color */
 }
 
 .project-list {
