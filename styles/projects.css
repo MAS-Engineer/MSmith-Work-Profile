@@ -3,7 +3,7 @@
   color: white;
   font-size: 3vw;
   border-bottom: 18px solid #a253a5;
-  max-width: 18rem;
+  max-width: 20rem;
   width: 80%;
   display: flex;
   margin: .50rem;
@@ -11,7 +11,7 @@
   top: 1rem;
   padding: 0;
   align-items: center;
-  margin-bottom: 10%; /* Space below heading */
+  margin-bottom: 3%; /* Space below heading */
   align-items: center; /* Center content */
   text-align: center; /* Center the heading */  
   box-sizing: border-box; /* Border-box for padding/margins */

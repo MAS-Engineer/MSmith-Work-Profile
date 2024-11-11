@@ -1,10 +1,7 @@
 .about-columns{
+  align-items: center;
+  padding: 20px;    
   display: flex; /* Use flexbox for a two-column layout */
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -13,7 +10,7 @@
 }
 .aboutHeading {
   color: white;
-  font-size: 3rem;
+  font-size: 5vw;
   border-bottom: 18px solid #a253a5;
   width: 16rem;
   display: block;
@@ -27,8 +24,8 @@
 }
 .aboutcontent{
   display: flex;
-    justify-content: space-between;
-    width: 100%;
+  justify-content: space-between;
+  width: 100%;
 }
 .aboutPageImage{
  
@@ -79,13 +76,15 @@
   opacity: 0; /* Start hidden */
   transition: opacity 0.3s; /* Fade in effect */
 }
-.headingInitiatives{
+.headingInitiatives {
   color: #a253a5;
-  font-size: 1rem;
+  font-size: 1.25rem;
   text-align: center;
-  text-decoration:dotted;
-
+  text-decoration: none; /* Remove default text decoration */
+  border-bottom: solid 2px white; /* Set border style, width, and color */
+  padding-bottom: 5px; /* Padding for spacing */
 }
+
 .initiativesList{
   margin: 2vw;
 }
@@ -144,6 +143,9 @@
 }
 
 @media (max-width: 480px) {
+  .aboutHeading{
+    font-size: 9vw;
+  }
   .profile_description {
       font-size: 3.5vw; /* Increase font size for mobile */
   }

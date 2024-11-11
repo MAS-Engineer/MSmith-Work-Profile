@@ -118,6 +118,29 @@
      document.getElementById('visitCount').textContent = visitCount;
      //#endregion
 
+//#region Highlight active menu item
+document.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('.navigation-item');
+  
+    let scrollPosition = window.scrollY + window.innerHeight / 2; // Center of the viewport
+  
+    sections.forEach((section, index) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      const sectionBottom = sectionTop + sectionHeight;
+  
+      // Check if the section is in view
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        navItems.forEach(item => item.classList.remove('active'));
+        navItems[index].classList.add('active');
+      }
+    });
+  });
+  
+   
+//#endregion  
+
      //#region unused code
   /*Code to implement an email service
     document.getElementById('form-Submit').addEventListener('click', function() {
