@@ -65,6 +65,11 @@
 .project-list a:hover {
   text-decoration: underline; /* Underline on hover */
 }
+/*Disply Postman text in orange*/
+.postmanText{
+  color: #FF6C37;
+
+}
 
 /* Pop-up styles */
 .popup {
